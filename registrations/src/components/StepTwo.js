@@ -57,7 +57,7 @@ const StepTwo = ({ nextStep }) => {
       <button className="button google-sign-in">
         <FcGoogle className="google-icon" /> Continue with Google
       </button>
-      <p className="text">Already have an account? <a href="#" className="link">Sign in</a></p>
+      <p className="text">Already have an account? <a href="https://shyntech-auth.netlify.app/" className="link">Sign in</a></p>
     </>
   );
 };

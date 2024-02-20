@@ -60,7 +60,7 @@ const StepOne = ({ nextStep }) => {
                 I accept Shyn Coin’s terms & Privacy
             </label>
             <button className="button" onClick={nextStep}>Proceed</button>
-            <p className="text">Already have an account? <a href="#" className="link">Sign in</a></p>
+            <p className="text">Already have an account? <a href="https://shyntech-auth.netlify.app/" className="link">Sign in</a></p>
         </>
     );
 };
