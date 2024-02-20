@@ -1,0 +1,22 @@
+.coun {
+    font-size: 1.2em;
+    margin-left: 2px;
+    /* Adjust the margin as needed */
+    margin-top: 0%;
+    margin-bottom: 0%;
+    font: bold;
+}
+
+.country-container {
+    display: flex;
+    align-items: center;
+    /* Vertically center the contents */
+    color: gray;
+    font: bold;
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+
+.select {
+    color: black;
+}

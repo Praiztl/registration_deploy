@@ -1,0 +1,230 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+}
+
+.container {
+    position: relative;
+    /* This allows absolute positioning relative to this container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-image: url("../assets/REGISTRATION_LANDSCAPE_2.png");
+    background-size: cover;
+    /*box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);*/
+    /*density control, looked too bright? remove comment*/
+}
+
+.globe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #c9c7c7;
+}
+
+.globe-with-text {
+    display: flex;
+    align-items: center;
+}
+
+.globe-text {
+    margin-left: 10px;
+    color: #c9c7c7;
+    font-size: 16px;
+}
+
+.background-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    z-index: -1;
+    /* Places the SVG behind the form content */
+}
+
+.form-content {
+    position: relative;
+    /* Ensures the form content is positioned above the background */
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 0;
+    z-index: 1;
+    /* Higher z-index than the SVG background */
+}
+
+.step-container {
+    background-color: #A1534E;
+    /* Lighter brown for the step container */
+    border-radius: 8px;
+    padding: 1.5rem;
+    width: 80%;
+    max-width: 450px;
+    /* Adjusted width for a slimmer box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Giving some depth */
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+}
+
+.back-button {
+    background-color: #a1534ed5;
+    border: none;
+    padding: 10px 20px;
+    cursor: default;
+    /* Change cursor to default arrow */
+    font-size: 24px;
+    margin-right: 8px;
+    /* Spacing between buttons */
+    margin-left: -10px;
+    /* Shift to the left by 10px */
+    color: #ffff;
+}
+
+.back-button:hover {
+    background-color: #835754d5;
+}
+
+.step-counter {
+    color: #fff;
+    /* White color for the step counter */
+}
+
+.button {
+    color: #fff;
+    width: 80%;
+    background-color: #5F130F;
+    color: white;
+    padding: 12px 70px;
+    border: 2px solid #5F130F;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1.5em
+}
+
+.button:hover {
+    background-color: #d37750;
+    /* Slightly lighter on hover */
+}
+
+.step-title {
+    color: #fff;
+    /* White color for the title */
+    font-size: 1.8em;
+}
+
+.input,
+.select {
+    width: 80%;
+    padding: 12px 70px;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    border-radius: 20px;
+    /* Rounded edges */
+    background-color: transparent;
+    /* Transparent background */
+    color: #fff;
+}
+
+.input::placeholder {
+    text-align: center;
+    /* Center-align placeholder text */
+}
+
+.checkbox {
+    margin-right: 10px;
+    outline: 0.5px grey;
+    transform: scale(1.6);
+    background: transparent;
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 14px;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.text {
+    color: #fff;
+    /* White color for text to ensure readability */
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.link {
+    color: #e6d5c3;
+    /* Lighter brown for links for contrast */
+    text-decoration: underline;
+    /* Underline to indicate it's clickable */
+    cursor: pointer;
+}
+
+.link:hover {
+    color: #fff;
+    /* White color on hover for a visual feedback */
+}
+
+.step-indicator {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.step {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ddd;
+    margin: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.step.active {
+    background-color: blue;
+    color: white;
+}
+
+.rect-indicator-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+    /* Adjust as needed */
+}
+
+.rect-indicator {
+    width: 9px;
+    /* Width of the rectangle */
+    height: 5px;
+    /* Height of the rectangle */
+    background-color: white;
+    /* Default color */
+    margin: 0 5px;
+    /* Even spacing between rectangles */
+    transition: background-color 0.3s;
+    /* Smooth transition for color change */
+}
+
+.rect-indicator--active {
+    background-color: blue;
+    /* Active color */
+}

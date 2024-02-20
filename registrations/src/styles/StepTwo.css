@@ -1,0 +1,23 @@
+/* StepTwo.css */
+
+.google-sign-in {
+    background-color: #5F130F;
+    color: #000000;
+    /* Text color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    /* Adjust padding as needed */
+    cursor: pointer;
+    /* Change cursor to pointer */
+    margin-top: 10px;
+    /* Add some margin at the top */
+}
+
+.google-icon {
+    margin-right: 10px;
+    /* Space between icon and text */
+    font-size: 24px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
